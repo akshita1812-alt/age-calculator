@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Light-grey: hsl(0, 0%, 86%);
+}
+body{
+    background-color: rgb(237, 236, 236);
+    padding-top: 100px;
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  .box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 600px;
+    border-radius: 25px 25px 150px 25px;
+    background-color: white;
+    padding: 20px;
+  }
+  .container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .form{
+    padding: 30px;
+  }
+  label{
+    font-family: 'Poppins';
+    font-size: 10px;
+    color: rgb(131, 131, 131);
+  }
+  input {
+    font-size: 32px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--Light-grey);
+    outline: none;
+    letter-spacing: 2px;
+    caret-color: var(--Purple);
+  }
+  input::placeholder{
+    font-style: bold;
+    font-size: 19px;
+    font-family: 'Poppins';
+  }
+  .line{
+    flex-grow: 1;
+    position: relative;
+    opacity: 30%;
+    padding-top: 30px;
+  }
+  button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: var(--Purple);
+    margin-top: -35px;
+    right: 500px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: var(--Off-black);
+  }
+  .next2 h1{
+    align-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Poppins'
+  }
+  .next2 span{
+    color: var(--Purple);
+  }
+
+
+  @media only screen and (max-width: 375px) {
+    .input {
+      margin-bottom: 40px;
+    }
+    input {
+      font-size: 18px;
+      width: 80px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .next2 h1 {
+        font-size: 45px;
+        font-style: italic;
+      }
+    button {
+        right: 40%;
+      }
+
+  }
+ 
